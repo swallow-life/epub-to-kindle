@@ -1,0 +1,6 @@
+<% @upload = Epub.new %>
+<%= form_for @upload, :url => {:action => :upload} do |f| %>
+	<%= f.label :file %>
+	<%= f.file_field :file %>
+	<%= f.submit "Upload" %>
+<% end %>
